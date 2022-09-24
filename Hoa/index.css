@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Kaushan+Script&family=Merienda+One&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@300;400;500;600&display=swap');
 
 * {
+<<<<<<< HEAD
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
+=======
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    height: 2px;
+    background-color: #fff;
+>>>>>>> 94ce071f7b299b93a29048282c93b2b882b73b58
 }
 
 ::-webkit-scrollbar {
@@ -13,6 +26,7 @@
     background-color: rgb(109, 121, 195);
 }
 
+<<<<<<< HEAD
 ::-webkit-scrollbar-thumb {
     width: 5px;
     height: 2px;
@@ -25,15 +39,38 @@ body {
     display: flex;
     justify-content: center;
     padding: 10px;
+=======
+.mt-8 {
+    margin-top: 12px;    
+}
+
+.mr-7 {
+    margin-right: 10px;
+}
+
+body {
+    padding: 10px;
+    background-color: rgb(75, 69, 75);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+>>>>>>> 94ce071f7b299b93a29048282c93b2b882b73b58
 }
 
 .main-box {
     width: 400px;
+<<<<<<< HEAD
     height: 90vh;
     background-color: rgb(255, 255, 255);
     padding: 15px 15px 0px;
     border-radius: 5px;
     margin-top: 20px;
+=======
+    height: 95vh;
+    padding: 15px 15px 0;
+    background-color: #fff;
+    border-radius: 5px;
+>>>>>>> 94ce071f7b299b93a29048282c93b2b882b73b58
 }
 
 .introduc {
@@ -41,7 +78,11 @@ body {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .introduc .heading {
+=======
+.introduc .heading{
+>>>>>>> 94ce071f7b299b93a29048282c93b2b882b73b58
     font-size: 28px;
 }
 
@@ -62,6 +103,7 @@ body {
     font-size: 18px;
 }
 
+<<<<<<< HEAD
 .mt-8 {
     margin-top: 12px;
 }
@@ -69,10 +111,16 @@ body {
 .sub-heading {
     font-size: 13px;
     color: rgb(112, 112, 112);
+=======
+.sub-heading {
+    font-size: 13px;
+    color: #707070;
+>>>>>>> 94ce071f7b299b93a29048282c93b2b882b73b58
     text-align: center;
 }
 
 .edit {
+<<<<<<< HEAD
     background-color: rgb(228, 230, 235);
     text-align: center;
     width: 100%;
@@ -91,23 +139,50 @@ body {
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
+=======
+    background-color: #E4E6EB;
+    text-align: center;
+    width: 100%;
+    padding: 4px 0;
+    border-radius: 5px;
+}
+
+.edit a {
+    text-decoration: none;
+    color: #050505;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.edit:hover{
+    background-color: #d5d2d2;
+    cursor: pointer;
+    transition: 0.3s ease;
+>>>>>>> 94ce071f7b299b93a29048282c93b2b882b73b58
 }
 
 .main-content {
     font-size: 13px;
 }
 
+<<<<<<< HEAD
 .main-content i{
     color: #8c939d;
     margin-right: 12px;
     width: 13px;
     font-size: 15px;
+=======
+.main-content .block{
+    display: flex;
+    align-items: center;
+>>>>>>> 94ce071f7b299b93a29048282c93b2b882b73b58
 }
 
 .main-content .content-inside {
     text-align: justify;
 }
 
+<<<<<<< HEAD
 .main-content .block {
     display: flex;
     align-items: center;
@@ -122,4 +197,29 @@ body {
 
 .main-content a:hover {
     text-decoration: underline;
+=======
+.main-content i {
+    width: 10px;
+    text-align: center;
+}
+
+.main-content span {
+    width: 90%;
+    font-weight: 400;
+}
+
+.main-content a{
+    font-weight: 700;
+    color: #050505;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main-content a:hover{
+    text-decoration: underline;
+}
+
+.main-content i {
+    color: #8c939d;
+>>>>>>> 94ce071f7b299b93a29048282c93b2b882b73b58
 }
