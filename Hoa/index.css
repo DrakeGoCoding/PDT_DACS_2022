@@ -23,7 +23,6 @@ body {
     background-color: rgb(75, 69, 75);
     height: 100vh;
     display: flex;
-    margin: auto;
     justify-content: center;
     padding: 10px;
 }
@@ -34,6 +33,7 @@ body {
     background-color: rgb(255, 255, 255);
     padding: 15px 15px 0px;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 .introduc {
@@ -100,7 +100,8 @@ body {
 .main-content i{
     color: #8c939d;
     margin-right: 12px;
-    width: 10px;
+    width: 13px;
+    font-size: 15px;
 }
 
 .main-content .content-inside {
