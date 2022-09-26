@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+}
+
+.main {
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    vertical-align: middle;
+    object-fit: cover;
+    height: 90px;
+    width: 90px;
+    margin-right: 10px;
+}
+
+.photo {
+    vertical-align: middle;
+    object-fit: cover;
+    height: 110px;
+    width: 110px;
+    margin-top: 10px;
+}
+
+.username {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+    margin-top: 30px;
+}
+
+.button {
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.follow-button {
+    background-color: rgb(143, 143, 143);
+    color: rgb(97, 239, 97);
+    border-radius: 2px;
+    border:none;
+    height: 28px;
+    width: 170px;
+}
+
+.follow-button:hover {
+    background-color: rgb(70,70,70);
+    color: rgb(97, 239, 97);
+    border-radius: 2px;
+    border:none;
+    height: 28px;
+    width: 170px;
+}
+
+.message-button {
+    background-color: rgb(143, 143, 143);
+    color: rgb(252, 252, 252);
+    border-radius: 2px;
+    border:none;
+    height: 28px;
+    width: 170px;
+}   
+
+.message-button:hover {
+    background-color: rgb(70,70,70);
+    color: rgb(252, 252, 252);
+    border-radius: 2px;
+    border:none;
+    height: 28px;
+    width: 170px;
+}   
+
+.stats-number {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.stats-index {
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stats {
+    display:inline-block;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+div.stats {
+    line-height: 40%;
+}
+
+.bio {
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
