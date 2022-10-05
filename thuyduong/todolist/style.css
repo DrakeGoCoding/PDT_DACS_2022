@@ -1,0 +1,68 @@
+body{
+    background-color: #e5bbbb;
+}
+
+.wrapper{
+    background-color: rgb(255, 255, 255);
+    max-width: 500px;
+    border-radius: 8px;
+    margin: 100px;
+    padding: 16px;
+}
+
+.task-input{
+    height: 48px;
+    padding: 12px 40px;
+}
+
+.task-input input{
+    height: 80%;
+    width: 100%;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.filter span{
+    cursor: pointer;
+    margin: 12px;
+}
+
+.filter span:first-child{
+    margin-left: 20px;
+}
+
+.filter span.active{
+    color: 	#ce7676;
+}
+
+.control .clear-button{
+    background-color: rgb(160, 7, 7);
+    color: white;
+    border-radius: 4px;
+    padding: 8px 16px;
+    border: none;
+}
+
+.task-box .task{
+    list-style: none;
+    height: 36px;
+}
+
+.task-box .task:first-child{
+    margin-top: none;
+}
+
+.task label{
+    display: flex;
+}
+
+.task label input{
+    margin-right: 16px;
+}
