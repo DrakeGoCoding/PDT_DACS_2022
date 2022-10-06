@@ -16,7 +16,7 @@ const renderToDo = (todo, index) => {
             <input type="checkbox" name="" onclick="handleCheck(this)" class="checkbox" id="delete-${index}">
             <div class="to-do-content">${todo.content}</div>
         </div>
-        <i class="fa-solid fa-trash onClick='handleDelete(this)' id="delete-${index}""></i>
+        <i class="fa-solid fa-trash onClick='handleDelete(delete-${index})'"></i>
     </div>`;
 };
 
