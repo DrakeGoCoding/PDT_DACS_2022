@@ -19,7 +19,12 @@
  */
 function findSymmetricNumber(range, inputNumber) {
 	let result = null;
+
 	const arr = Array.from({ length: range }, (_, i) => i + 1);
+
+	if (arr.length % 2 !== 0) {
+		return result;
+	}
 
 	if (!arr.length) return result;
 	if (!arr.every((num) => num > 0)) return result;
@@ -31,19 +36,15 @@ function findSymmetricNumber(range, inputNumber) {
 	const index = arr.length - 1 - inputNumIndex;
 	result = arr[index];
 
-	if (!result || result % 2 != 0) {
-		result = null;
-	}
-
-	console.log(`Symmetric of input (${range},${inputNumber}) is`, result);
 	return result;
 }
 
 console.log("Ex 1:");
-findSymmetricNumber(10, 8);
-findSymmetricNumber(10, 3);
-findSymmetricNumber(9, 3);
-findSymmetricNumber(10, 11);
+console.log(findSymmetricNumber(10, 8));
+console.log(findSymmetricNumber(10, 8));
+console.log(findSymmetricNumber(10, 3));
+console.log(findSymmetricNumber(9, 3));
+console.log(findSymmetricNumber(10, 11));
 
 // Ex2. Hoàn thiện hàm merge xen kẽ 2 chuỗi
 
