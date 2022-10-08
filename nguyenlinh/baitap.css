@@ -1,0 +1,26 @@
+.avatar {
+	border-radius: 50%;
+	padding: 5px;
+	margin: 0 auto;
+	height: auto;
+	width: 200px;
+}
+.img-container {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+    }
+.name{
+    text-align: center;
+}
+.tieusu{
+    border-radius: 5px 5px 5px 5px;
+    background-color: darkgray;
+    color: black;
+}
+.all{
+    width: 500px;
+    border-top: 1px solid black;
+    margin: auto;
+    padding: 5px;
+}
