@@ -1,4 +1,5 @@
 // Thời gian làm bài: 1h30p (không kể 5p đọc đề)
+// Các em đọc kỹ đề và làm đúng yêu cầu đề bài. Good luck!
 
 // Ex1. Hoàn thiện hàm tìm số đối xứng dưới đây
 
