@@ -11,18 +11,32 @@
  * @example
  * findSymmetricNumber(10, 8) => 3
  * findSymmetricNumber(10, 3) => 8
- * findSymmetricNumber(10, 0) => 5
- * findSymmetricNumber(10, 5) => 0
  * findSymmetricNumber(9, 3) => null
  * findSymmetricNumber(10, 11) => null
  */
 function findSymmetricNumber(range, inputNumber) {
 	let result = null;
+	const arr = Array.from({ length: range }, (_, i) => i + 1);
 
-	// Viết code ở đây
+	if (!arr.length) return result;
+	if (!arr.every((num) => num > 0)) return result;
 
+	const inputNumIndex = arr.indexOf(inputNumber);
+
+	if (!inputNumIndex) return result;
+
+	const index = arr.length - 1 - inputNumIndex;
+	result = arr[index] || null;
+
+	console.log(`Symmetric of input (${range},${inputNumber}) is`, result);
 	return result;
 }
+
+console.log("Ex 1:");
+findSymmetricNumber(10, 8);
+findSymmetricNumber(10, 3);
+findSymmetricNumber(9, 3);
+findSymmetricNumber(10, 11);
 
 // Ex2. Hoàn thiện hàm merge xen kẽ 2 chuỗi
 
@@ -37,15 +51,40 @@ function findSymmetricNumber(range, inputNumber) {
  * mergeStringAlternately('abc', 'x') => 'axbc'
  * mergeStringAlternately('abc', '') => 'abc'
  * mergeStringAlternately('', 'xyz') => 'xyz'
- * mergeSmergeStringAlternatelytring('', '') => ''
+ * mergeStringAlternatelytring('', '') => ''
  */
 function mergeStringAlternately(str1, str2) {
 	let result = "";
 
-	// Viết code ở đây
+	if (!str1 && !str2) return result;
+	if (!str1) return str2;
+	if (!str2) return str1;
 
+	const arr1 = str1.split("");
+	const arr2 = str2.split("");
+
+	let resArr = [];
+
+	arr1.forEach((elem, index) => {
+		resArr.push(elem);
+		if (arr2[index]) resArr.push(arr2[index]);
+	});
+
+	result = resArr.join("");
 	return result;
 }
+
+console.log("-------------------------------------");
+console.log("Ex 2:");
+
+console.log(mergeStringAlternately("abc", "xy"));
+console.log(mergeStringAlternately("abc", "xyz"));
+console.log(mergeStringAlternately("abc", "x"));
+console.log(mergeStringAlternately("abc", ""));
+console.log(mergeStringAlternately("", "xyz"));
+console.log(mergeStringAlternately("", ""));
+
+console.log("-------------------------------------");
 
 // Ex3. Viết 1 trang web đơn giản cho trò chơi đoán số ngẫu nhiên với các yêu cầu
 // - Hệ thống tự khởi tạo 1 số nguyên ngẫu nhiên x trong phạm vi cho trước
