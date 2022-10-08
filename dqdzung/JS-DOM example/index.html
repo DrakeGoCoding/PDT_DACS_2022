@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <img id="img" width="500px"
+      src='https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg' alt=""></a>
+  </div>
+
+  <button id="btn" style="margin-top: 10px;">Change</button>
+
+  <script defer>
+    const img = document.getElementById('img')
+    const btn = document.getElementById('btn')
+
+    const catSrc = 'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg'
+    const dogSrc = img.src
+
+
+    btn.addEventListener("click", () => {
+      if (img.src === dogSrc) {
+        img.src = catSrc
+        return
+      }
+      img.src = dogSrc
+    })
+
+  </script>
+</body>
+
+</html>

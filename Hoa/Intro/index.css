@@ -7,6 +7,10 @@
     padding: 0px;
 }
 
+.mt-8 {
+    margin-top: 12px;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -29,11 +33,11 @@ body {
 
 .main-box {
     width: 400px;
-    height: 90vh;
+    min-height: 90vh;
     background-color: rgb(255, 255, 255);
     padding: 15px 15px 0px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .introduc {
@@ -60,10 +64,6 @@ body {
 .avatar span {
     font-weight: 500;
     font-size: 18px;
-}
-
-.mt-8 {
-    margin-top: 12px;
 }
 
 .sub-heading {
@@ -100,7 +100,7 @@ body {
 .main-content i{
     color: #8c939d;
     margin-right: 12px;
-    width: 13px;
+    width: 10px;
     font-size: 15px;
 }
 
