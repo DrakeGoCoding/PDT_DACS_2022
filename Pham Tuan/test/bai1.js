@@ -11,4 +11,7 @@ for (var i=0; i<x.length; i++) {
 
 }
 }
-console.log(bai1(10,4));
+console.log(bai1(10,8));
+console.log(bai1(10,3));
+console.log(bai1(9,3));
+console.log(bai1(10,11));
