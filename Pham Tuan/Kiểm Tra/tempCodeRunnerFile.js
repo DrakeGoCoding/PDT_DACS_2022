@@ -1,0 +1,1 @@
+listStudent.pop(x);
