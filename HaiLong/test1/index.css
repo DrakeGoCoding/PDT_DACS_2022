@@ -1,0 +1,15 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 16px 20px;
+    border-radius: 8px;
+
+}
