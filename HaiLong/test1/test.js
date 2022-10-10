@@ -140,7 +140,17 @@ console.log(sortStudents(listStudent))
 // - Giảng viên có thể nhập vào danh sách sinh viên bao gồm họ tên và điểm số
 // - Khi nhấn nút "Tính điểm" thì sẽ hiển thị được bảng chứa danh sách sinh viên đã được làm tròn điểm số và sắp xếp với tiêu chí từ bài 3
 // với các cột: Họ tên, Điểm (bằng số), Điểm (bằng chữ)
+const name = document.getElementById("name");
+const score1 = document.getElementById("score1");
+const scoreA = document.getElementById("scoreA");
+const submit = document.getElementById("submit");
+var data = [];
 function addStudent(event) {
+
+    const name = document.getElementById.value;
+    const score1 = document.getElementById.value;
+    const scoreA = document.getElementById.value;
+
     const newStudent = {
         fullName: event.target.fullName,
         score: event.target.score
