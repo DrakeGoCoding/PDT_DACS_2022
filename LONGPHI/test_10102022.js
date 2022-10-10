@@ -29,12 +29,25 @@
  */
 function roundScores(scores) {
 	// Viết code ở đây
-
-	return finalScores;
+	let finalScores;
+	for(let i = 0; i < scores.length; i++) {
+		if(scores[i] >= scores[i]+0.3 && scores[i] <= scores[i]+0.5) {
+			finalScores.push(scores[i].floor()+0.5);
+		}else if(scores[i] == scores[i]+0.2) {
+			finalScores.push(scores[i].floor()+0.2);
+		}else if(scores[i] == scores[i]+0.1) {
+			finalScores.push(scores[i].floor());
+		}else if(scores[i] >= scores[i]+0.8 && scores[i] <= scores[i].ceil) {
+			finalScores.push(scores[i].ceil());
+		}
+		return finalScores;
+	}
 }
 
+let data = roundScores([8.0, 8.4, 4.2, 4.3, 4.6, 4.8]);
+console.log(data);
 // Ex2: Viết hàm chuyển đổi từ điểm số sang điểm chữ theo tiêu chuẩn của trường
-
+// A [8.5 - 10], B [7.0 - 8.5), C [5.5 - 7), D [4.0 - 5.5), F [0 - 4]
 /**
  * Hàm chuyển đổi điểm số sang điểm chữ
  * @param {number} score
@@ -45,10 +58,20 @@ function roundScores(scores) {
  */
 function convertScoreToGrade(score) {
 	// Viết code ở đây
-
-	return grade;
+	if(score < 4.0 ) {
+		return "F";
+	}else if(score >= 4.0 && score <=5.5){
+		return "D";
+	}else if(score >= 5.6 && score <=6.9){
+		return "C";
+	}else if(score >= 7.0 && score <= 8.4) {
+		return "B";
+	}else if(score >= 8.5 && score <= 10.0) {
+		return "A";
+	}
 }
-
+console.log(convertScoreToGrade(8.0));
+console.log(convertScoreToGrade(4.0));
 // Ex3: Hoàn thiện hàm sắp xếp danh sách sinh viên theo 2 tiêu chí
 // - Sắp xếp theo điểm số (đã làm tròn qua Ex1) từ cao đến thấp
 // - Nếu 2 sinh viên có điểm số bằng nhau thì tiếp tục sắp xếp tên sinh viên theo thứ tự bảng chữ cái
@@ -60,10 +83,27 @@ function convertScoreToGrade(score) {
  */
 function sortStudents(students) {
 	// Viết code ở đây
-
-	return sortedList;
+	for(let i = 0; i < students.length; i++) {
+		for(let j = 0; j < students[i].length; j++) {
+			if(students[i].score > students[j].score) {
+				return sortedList.push(students[i].fullName + students[j].score);
+			}
+		}
+	}
 }
 
+let students = [
+	{
+		fullName: 'Hòa',
+		score: 9
+	},
+	{
+		fullName: 'Đức',
+		score: 6
+	}
+]
+
+console.log(sortStudents(students));
 // Ex4: Viết 1 trang web đơn giản để thầy Toàn có thể tính toán nhanh điểm số của sinh viên. Yêu cầu:
 // - Giảng viên có thể nhập vào danh sách sinh viên bao gồm họ tên và điểm số
 // - Khi nhấn nút "Tính điểm" thì sẽ hiển thị được bảng chứa danh sách sinh viên đã được làm tròn điểm số và sắp xếp với tiêu chí từ bài 3
