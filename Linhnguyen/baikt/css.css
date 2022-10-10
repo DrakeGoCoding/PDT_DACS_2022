@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    background: linear-gradient(to right,red,blue);
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    display: flex;
+}
+.bound{
+    max-width: 400px;
+    margin-top: 120px;
+    background-color: #fff;
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+.tinhdiem{
+    width: 60px;
+    margin-left: 15px;
+    border: 1px solid #0093ab;
+    background-color: #0093ab;
+    border-radius: 3px;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 10px 1px;
+}
+
+.from input{
+    width: 70%;
+    height: 100%;
+    border-radius: 3px;
+    outline: none;
+    border: 2px solid #3e5d72;
+    font-size: 17px;
+    padding: 10px 10px;
+    margin-top: 20px;
+}
+.from button{
+    width: 60px;
+    margin-left: 15px;
+    border: 1px solid #0093ab;
+    background-color: #0093ab;
+    border-radius: 3px;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 10px 1px;
+}
+.result{
+    width:100%;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+
+.result span{
+    width: 100%;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
