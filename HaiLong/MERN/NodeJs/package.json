@@ -1,0 +1,28 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "node js backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js"
+  },
+  "keywords": [
+    "hai",
+    "long",
+    "todolist"
+  ],
+  "author": "Hai Long",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "7.17.5",
+    "@babel/node": "7.16.8",
+    "@babel/preset-env": "7.16.11",
+    "body-parser": "1.19.2",
+    "dotenv": "16.0.0",
+    "express": "4.17.3",
+    "joi": "17.6.0",
+    "mongodb": "4.4.1",
+    "nodemon": "2.0.15"
+  }
+}
