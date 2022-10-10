@@ -6,10 +6,7 @@
 // - Khi hết giờ làm bài, các em lần lượt chuyển sang đường link meet thứ 2 để thực hiện các thao tác git bash
 // Các em đọc kỹ đề và làm đúng yêu cầu đề bài. Good luck!
 
-// Trường Đại học Phenikaa có tiêu chuẩn chấm điểm bài thi cho sinh viên như sau:
-// - Bài thi có thang điểm từ 0 đến 10
-// - Điểm số bài thi được chuẩn hóa bằng hệ điểm chữ cụ thể là:
-// A [8.5 - 10], B [7.0 - 8.5), C [5.5 - 7), D [4.0 - 5.5), F [0 - 4]
+// Ex1. Hoàn thiện hàm tìm số đối xứng chẵn dưới đây
 
 // Thầy Trần Quang Toàn là 1 giảng viên tại trường và có cách làm tròn điểm của bài thi như sau:
 // - Nếu điểm của bài thi nhỏ hơn 4 thì không làm tròn
@@ -26,6 +23,18 @@
  * @param {number[]} scores Mảng chứa các điểm số của bài thi
  * @return {number[]} Mảng chứa các điểm làm tròn của các điểm từ mảng scores truyền vào
  * @example roundScores([8.0, 8.4, 4.2, 4.3, 4.6, 4.8]) => [8.0, 8.5, 4.2, 4.5, 4.6, 5.0]
+ * Hàm tìm số đối xứng chẵn
+ * (số đối xứng chẵn là số đọc từ trái sang phải và từ phải sang trái đều giống nhau trong cùng 1 dãy số gồm số các phần tử là số chẵn)
+ * VD: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+ * Các cặp số đối xứng chẵn là (1, 10), (2, 9), (3, 8), (4, 7), (5, 6)
+ * @param {Integer} range Giới hạn phạm vi tìm kiếm (số nguyên dương)
+ * @param {Number} inputNumber Số cần tìm (số nguyên dương)
+ * @return {Number | null} Trả về số đối xứng chẵn trong phạm vi nếu tìm thấy hoặc null nếu không tìm thấy
+ * @example
+ * findSymmetricNumber(10, 8) => 3
+ * findSymmetricNumber(10, 3) => 8
+ * findSymmetricNumber(9, 3) => null. vì trong phạm vi lẻ (1->9) không có số đối xứng chẵn
+ * findSymmetricNumber(10, 11) => null. vì 11 nằm ngoài phạm vi tìm kiếm
  */
  function roundScores(scores) {
 	// Viết code ở đây
@@ -64,7 +73,24 @@ function sortStudents(students) {
 	return sortedList;
 }
 
-// Ex4: Viết 1 trang web đơn giản để thầy Toàn có thể tính toán nhanh điểm số của sinh viên. Yêu cầu:
-// - Giảng viên có thể nhập vào danh sách sinh viên bao gồm họ tên và điểm số
-// - Khi nhấn nút "Tính điểm" thì sẽ hiển thị được bảng chứa danh sách sinh viên đã được làm tròn điểm số và sắp xếp với tiêu chí từ bài 3
-// với các cột: Họ tên, Điểm (bằng số), Điểm (bằng chữ)
+// - Kiểm tra tính đúng đắn của giá trị nhập vào
+// + Nếu người dùng nhập vào 1 ký tự không phải số nguyên thì hiển thị cảnh báo
+// "Vui lòng nhập vào 1 số nguyên".
+// + Nếu người dùng nhập vào 1 số nằm ngoài phạm vi cho trước thì hiển thị cảnh báo
+// "Vui lòng nhập vào 1 số trong phạm vi 1 - 100".
+
+// - Yêu cầu bổ sung:
+// + Tăng độ khó cho trò chơi bằng cách giới hạn số lần đoán của người dùng.
+// + Số lần đoán được nhập từ bàn phím (VD: 3, 4, 5).
+// + Nếu người dùng đoán sai thì hiển thị thông báo "Hãy thử 1 số cao/thấp hơn. Bạn còn n cơ hội!".
+// với n là số lần đoán còn lại.
+// + Nếu người dùng đoán sai quá số lần cho phép thì hiển thị thông báo "Bạn đã thua cuộc. Đáp án là x!".
+// + Nếu người dùng đoán đúng trước khi hết số lần cho phép thì hiển thị thông báo
+// "Chúc mừng bạn đã đoán chính xác sau 2 lần đoán".
+
+// - Yêu cầu bắt buộc
+// + Viền của các nút (button) và input phải được bo tròn 4px
+// + Màu chữ mặc định được xác định bằng ngày tháng năm sinh của bạn
+// VD: 21/12/2000 -> #211200
+// (nếu chữ có màu sắc khó nhìn thì hãy thay đổi màu background của trang web sao cho phù hợp)
+// + Chỉ sử dụng HTML, CSS, JS

@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    text-align: center;
+    background-color:rgb(150, 119, 119);
+    height: 1000px;
+    
+}
+.main #bt_text{
+    font-size:25px;
+    margin-top: 150px;
+    border-radius: 10px;
+    box-shadow:3px 3px 3px 3px rgb(77, 95, 95);
+ 
+    
+}
+.main #bt_text1{
+    font-size:25px;
+    margin-top: 150px;
+    border-radius: 10px;
+    box-shadow:3px 3px 3px 3px rgb(77, 95, 95);
+
+    
+}
+.main #bt_submit{
+    font-size: 25px;
+    background-color:aqua;
+    border-radius: 5px;
+    margin:50px 50px;
+}
