@@ -15,6 +15,8 @@
  * findSymmetricNumber(10, 5) => 0
  * findSymmetricNumber(9, 3) => null
  * findSymmetricNumber(10, 11) => null
+ * 1 2 3 4 5 6 7 8 9 10
+ * 10 9 8 7 6 5 4 3
  */
 function findSymmetricNumber(range, inputNumber) {
 	let result = null;
@@ -40,12 +42,14 @@ function findSymmetricNumber(range, inputNumber) {
  * mergeSmergeStringAlternatelytring('', '') => ''
  */
 function mergeStringAlternately(str1, str2) {
-	let result = "";
+	let result = str1+str2;
 
 	// Viết code ở đây
 
 	return result;
 }
+console.log(mergeStringAlternately(xy,z));
+
 
 // Ex3. Viết 1 trang web đơn giản cho trò chơi đoán số ngẫu nhiên với các yêu cầu
 // - Hệ thống tự khởi tạo 1 số nguyên ngẫu nhiên x trong phạm vi cho trước
