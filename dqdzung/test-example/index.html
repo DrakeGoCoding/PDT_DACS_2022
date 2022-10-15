@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess A Number</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="./index.js" defer></script>
+
+  <div class="main">
+    <div class="card" id="start-card">
+      <div class="input-wrapper">
+        <span>Start</span>
+        <input type="number" name="start" id="range-start" min="0"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Start range, starts with 0">
+      </div>
+      <div class="input-wrapper">
+        <span>End</span>
+        <input type="number" name="start" id="range-end" min="0"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="End range">
+      </div>
+      <div class="input-wrapper">
+        <span>Attempt</span>
+        <input type="number" name="attempt" id="attempt-input" min="0"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Number of attempts">
+      </div>
+      <div class="btn-wrapper">
+        <button class="btn" id="start-btn">Start Game</button>
+      </div>
+    </div>
+
+    <div class="card hidden" id="attempt-card">
+      <div class="attempt-wrapper">
+        <div>Attempt(s):</div>
+        <div id='attempt-inner'></div>
+      </div>
+    </div>
+
+    <div class="card hidden" id="hint-card">
+      <div class="attempt-wrapper">
+        <div>Hint:</div>
+        <div id='hint-inner'></div>
+      </div>
+    </div>
+
+    <div class="card hidden" id="game-card">
+      <div class="input-wrapper">
+        <span>Your guess</span>
+        <input type="number" name="guess" id="guess-input" min="0"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+      </div>
+      <div class="btn-wrapper">
+        <button class="btn" id="guess-btn">Guess</button>
+      </div>
+    </div>
+
+    <div class="card hidden" id="result-card"></div>
+  </div>
+
+</body>
+
+</html>
