@@ -4,7 +4,9 @@ const randomPerson = async () => {
 			return data;
 		})
 	);
-	console.log(res.results);
+	console.log("fetched random person", res.results[0]);
 };
 
-randomPerson();
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", () => randomPerson());
