@@ -27,25 +27,25 @@
  * @return {number[]} Mảng chứa các điểm làm tròn của các điểm từ mảng scores truyền vào
  * @example roundScores([8.0, 8.4, 4.2, 4.3, 4.6, 4.8]) => [8.0, 8.5, 4.2, 4.5, 4.6, 5.0]
  */
-function roundScores(scores) {
-	// Viết code ở đây
-	let finalScores;
-	for(let i = 0; i < scores.length; i++) {
-		if(scores[i] >= scores[i]+0.3 && scores[i] <= scores[i]+0.5) {
-			finalScores.push(scores[i].floor()+0.5);
-		}else if(scores[i] == scores[i]+0.2) {
-			finalScores.push(scores[i].floor()+0.2);
-		}else if(scores[i] == scores[i]+0.1) {
-			finalScores.push(scores[i].floor());
-		}else if(scores[i] >= scores[i]+0.8 && scores[i] <= scores[i].ceil) {
-			finalScores.push(scores[i].ceil());
-		}
-		return finalScores;
-	}
+ function roundScores(scores) {
+    return scores.map((element) => {
+        const x = Math.floor(element * 10 % 10);
+        if (x < 3) {
+            return Math.floor(element);
+        }
+        else if (x >= 3 && x <=5) {
+            return Math.floor(element) + 0.5;
+        }
+        else if (x> 5 && x <8) {
+            return element
+        }
+        else {
+            return Math.ceil(element);
+        }
+    })
 }
 
-let data = roundScores([8.0, 8.4, 4.2, 4.3, 4.6, 4.8]);
-console.log(data);
+console.log(roundScores([8.8, 8.4, 4.2, 4.3, 4.6, 4.8]))
 // Ex2: Viết hàm chuyển đổi từ điểm số sang điểm chữ theo tiêu chuẩn của trường
 // A [8.5 - 10], B [7.0 - 8.5), C [5.5 - 7), D [4.0 - 5.5), F [0 - 4]
 /**
@@ -60,11 +60,11 @@ function convertScoreToGrade(score) {
 	// Viết code ở đây
 	if(score < 4.0 ) {
 		return "F";
-	}else if(score >= 4.0 && score <=5.5){
+	}else if(score >= 4.0 && score < 5.5){
 		return "D";
-	}else if(score >= 5.6 && score <=6.9){
+	}else if(score >= 5.5 && score < 7.0){
 		return "C";
-	}else if(score >= 7.0 && score <= 8.4) {
+	}else if(score >= 7.0 && score < 8.5) {
 		return "B";
 	}else if(score >= 8.5 && score <= 10.0) {
 		return "A";
