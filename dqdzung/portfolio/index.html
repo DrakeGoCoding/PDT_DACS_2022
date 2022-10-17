@@ -15,34 +15,42 @@
   <div class="main">
     <div class="card">
       <div class="img-container">
-        <img src="./assets/70221878.png" class="avatar"></img>
+        <img id='avatar' src="./assets/70221878.png" class="avatar"></img>
       </div>
-      <h1 class="text-center">Dinh Quang Dzung</h1>
-      <h3 class="text-center friends">
-        69 friends
-      </h3>
+      <h1 class="text-center" id="name">Dinh Quang Dzung</h1>
     </div>
 
     <div class="card">
       <h3 class="intro-header">Intro</h3>
-      <p class="text-center">"I'm a dog"</p>
       <div class="info-content">
-        <p class="info-text">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <span>Studied at Diplomatic Academy of Vietnam</span>
-        </p>
-        <p class="info-text">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <span>Went to Kim Lien High School</span>
-        </p>
-        <p class="info-text">
-          <i class="fa-solid fa-house-chimney"></i>
-          <span>Lives in Hanoi, Vietnam</span>
-        </p>
-        <p class="info-text">
-          <i class="fa-solid fa-clock"></i>
-          <span>Joined 2010</span>
-        </p>
+        <div style="display: flex; justify-content: space-between; margin: 5px 0 5px 0">
+          <span style="margin-right: 20px;">Gender:</span>
+          <span id="gender">Male</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 5px 0 5px 0">
+          <span style="margin-right: 20px;">Age:</span>
+          <span id="dob">21</span>
+        </div style="display: flex; justify-content: space-between; margin: 5px 0 5px 0">
+        <div style="display: flex; justify-content: space-between; margin: 5px 0 5px 0">
+          <span style="margin-right: 20px;">Phone:</span>
+          <span id="phone">9999999999</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 5px 0 5px 0">
+          <span style="margin-right: 20px;">Email:</span>
+          <span id="email">abcxyz@abcxyz.com</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin: 5px 0 5px 0">
+          <span style="margin-right: 20px;">Location:</span>
+          <span id="location">Vietnam</span>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="text-center">
+        <button id="random-btn">Random</button>
       </div>
     </div>
 
