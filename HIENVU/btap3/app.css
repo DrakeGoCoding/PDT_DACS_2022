@@ -1,0 +1,118 @@
+* {
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+
+.container {
+    width: 35%;
+    height: 390px;
+    background-color: rgb(238, 235, 235);
+    text-align: center;
+    margin: 100px auto;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow:3px 3px 3px 3px gray;
+}
+
+.card-head {
+    height: 150px;
+    border-radius: 5px;
+
+
+}
+
+.user-image {
+
+    text-align: center;
+
+
+}
+
+.card-body {
+    background-color: rgb(238, 235, 235);
+    height: 150px;
+}
+
+.user-post-address {
+    background-color: lightgray;
+    height: 60px;
+
+
+}
+
+.user-post-address1 {
+    background-color: rgb(182, 228, 243);
+    width: 33.33333333333333%;
+    float: left;
+    height: 100%;
+    text-align: center;
+
+}
+
+.user-post-address span {
+    line-height: 33px;
+}
+
+.user-post-address2 {
+    font-weight: bold;
+}
+
+.user-name {
+   
+    text-align: center;
+    margin: 10px;
+}
+
+.user-name-title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.user-name-full {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.user-age {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.user-location-address {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.card-foot {
+    height: 57px
+}
+
+.user-contact-info {
+    
+    padding: 15px;
+
+}
+
+.user-contact-info span {
+    padding: 10px;
+}
+
+.card-foot a {
+    color: black;
+    text-decoration: none;
+}
+
+.card-foot a:hover {
+    color: blue;
+
+}
+
+.container #generate-btn {
+    background-color: rgb(196, 129, 41);
+    border-radius: 5px;
+
+}
+
+#generate-btn:hover {
+    background-color: green;
+}
