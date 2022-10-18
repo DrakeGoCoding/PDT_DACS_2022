@@ -16,11 +16,11 @@
         </div>
         
         <div class="avatar mt-8">
-            <img src="./image/2b818a6093597c072548.jpg" alt="" height="60px" width="60px">
-            <span>nguyễn văn hòa</span>
+            <img id="image" src="./image/2b818a6093597c072548.jpg" alt="" height="60px" width="60px">
+            <span id="name">nguyễn văn hòa</span>
         </div>
 
-        <div class="sub-heading mt-8">Chụp ảnh cưới và linh tinh. LH Mr.Hòa: 0388267553</div>
+        <div class="sub-heading mt-8" id="email">Chụp ảnh cưới và linh tinh. LH Mr.Hòa: 0388267553</div>
 
         <div  class="edit mt-8">
             <a href="#">Thêm tiểu sử</a>
@@ -31,37 +31,37 @@
                 <i class="fa-solid fa-briefcase mr-7"></i>
                 <div class="content-inside">
                     <span>Làm việc tại</span>
-                    <a href="https://www.facebook.com/SmileMediaChupanhkyyeu">Smile Media - Chụp ảnh kỷ yếu</a>
+                    <a href="https://www.facebook.com/SmileMediaChupanhkyyeu" id="work-pl">Smile Media - Chụp ảnh kỷ yếu</a>
                 </div>
             </div>
 
             <div class="mt-8 block">
-                <i class="fa-solid fa-graduation-cap mr-7"></i>
+                <i class="fa-solid fa-venus-mars mr-7"></i>
                 <div class="content-inside">
-                    <span>Học Công Nghệ Thông Tin Việt - Nhật tại</span>
-                    <a href="https://www.facebook.com/daihocphenikaa"> Trường Đại Học Phenikaa</a>
+                    <span>Gender</span>
+                    <a href="https://www.facebook.com/daihocphenikaa" id="gender">Nam</a>
                 </div>
             </div>
 
             <div class="mt-8">
                 <i class="fa-solid fa-house-chimney mr-7"></i>
                 <span>Sống tại</span>
-                <a href="#">Hà Nội</a>
+                <a href="#" id="locate">Hà Nội</a>
             </div>
 
             <div class="mt-8" class="content-inside">
                 <i class="fa-solid fa-location-dot mr-7"></i>
                 <span>Đến từ</span>
-                <a href="#">Hải Dương</a>
+                <a href="#" id="hometown">Hải Dương</a>
             </div>
             <div class="mt-8" class="content-inside">
                 <i class="fa-solid fa-heart mr-7"></i>
-                <span>Độc thân</span>
+                <span id="state-love">Độc thân</span>
             </div>
             <div class="mt-8" class="content-inside">
                 <i class="fa-brands fa-spotify mr-7"></i>
                 <span>Có</span>
-                <a href="#">134 người</a>
+                <a href="#" id="fl">134 người</a>
                 <span>theo dõi</span>
             </div>
         </div>
@@ -74,4 +74,6 @@
             <a href="#">Thêm sở thích</a>
         </div>
     </div>
+    <button class="random-btn" onclick="getRandomUser()">Random User</button>
+    <script src="./main.js"></script>
 </body>
