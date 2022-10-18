@@ -124,11 +124,13 @@ body {
 }
 
 .random-btn {
+    margin-top: 8px;
     cursor: pointer;
     padding: 8px 15px;
     border-radius: 7px;
     background-color: aliceblue;
     font-weight: 700;
+    margin-left: 120px;
 }
 
 .random-btn:hover {
