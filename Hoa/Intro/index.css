@@ -131,6 +131,8 @@ body {
     border-radius: 7px;
     background-color: aliceblue;
     font-weight: 700;
+    position: absolute;
+    left: 140px;
 }
 
 .random-btn:hover {
