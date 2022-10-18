@@ -24,7 +24,7 @@ function displayUser(user) {
     location.innerText = `${user.location.street.name}`
     hometown.innerText = `${user.location.country}`
     gender.innerText = `${user.gender}`
-    fl.innerText = `${user.dob.age} người`
+    follow.innerText = `${user.dob.age} người`
 }
 
 getRandomUser();
