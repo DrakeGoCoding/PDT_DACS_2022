@@ -3,11 +3,10 @@ const searchPokemon = document.querySelector('button');
 const display = document.querySelector('.display');
 searchPokemon.addEventListener("click", () => {
     let pokemon = namePokemon.value;
-    let URL = 'https://pokeapi.co/api/v2/pokemon/';
-    let API = URL + pokemon;
-    console.log(API);
+    let URL = 'https://pokeapi.co/api/v2/pokemon/' + pokemon;
+
 async function getPokemon(){
-   const response = await fetch(API);
+   const response = await fetch(URL);
    const data = await response.json();
     return data;
 }
