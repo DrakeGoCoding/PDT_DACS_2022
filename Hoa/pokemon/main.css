@@ -1,0 +1,86 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    background-image: url('./img/ok.jpg');
+    background-size: cover;
+}
+
+#root {
+    /* background-color: transparent; */
+    /* background-color: #fff; */
+    background-image: linear-gradient(to bottom, #b5923e, #f5e6c5);
+    /* color: #fff; */
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    min-height: 50px;
+    width: 370px;
+}
+
+.search-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input, button {
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+input {
+    outline: none;
+    border: 1px solid #000 ;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.pokemon-contain {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box {
+    display: flex;
+}
+
+.img {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.pokemonIn4 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    text-transform: capitalize;
+}
+
+p {
+    margin-top: 7px;
+    font-weight: 600;
+}

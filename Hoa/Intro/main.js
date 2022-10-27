@@ -1,5 +1,5 @@
 async function getRandomUser() {
-    const response = await fetch('https://randomuser.me/api/');
+    const response = await fetch('https://randomuser.me/api/z');
     const data = await response.json();
     const user = data.results[0];
     displayUser(user);
