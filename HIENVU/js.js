@@ -1,7 +1,6 @@
 const bt_text = document.getElementById("bt_text")
 const bt_text1 = document.getElementById("bt_text1")
 const bt_submit = document.getElementById("bt_submit")
-
 var data = []
 function addButton() {
     var bt_text = document.getElementById("bt_text").value;

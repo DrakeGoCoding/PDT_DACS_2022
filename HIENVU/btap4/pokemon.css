@@ -22,7 +22,6 @@
 }
 .thuoctinh{
     text-transform: capitalize;
-    
 }
 .header{
     padding:25px;
@@ -32,11 +31,14 @@
     font-size: 15px;
     box-shadow: 3px 3px 3px 3px rgb(99, 96, 96);
     border-radius: 3px;
+   
+    /* left: 10px; */
 }
 #search_btn{
     font-size: 15px;
     box-shadow: 3px 3px 3px 3px rgb(99, 96, 96);
     border-radius: 3px;
+ 
 }
 
 #search_btn:hover{

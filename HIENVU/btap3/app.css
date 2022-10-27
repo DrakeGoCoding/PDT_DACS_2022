@@ -115,4 +115,5 @@
 
 #generate-btn:hover {
     background-color: green;
+    transition: width 1s,height 2s;
 }

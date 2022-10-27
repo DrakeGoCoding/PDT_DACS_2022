@@ -11,8 +11,9 @@ const getPokemon = async term => {
 }
 
 search_btn.addEventListener('click', () => {
-    getPokemon(search.value).then(pokemon => {
-        hienthi.innerHTML = `
+    getPokemon(search.value)
+        .then(pokemon => {
+            hienthi.innerHTML = `
             <div class="hienthi">
             <img class="anh" src="${pokemon.sprites.front_default}" alt="">
             <img class="anh" src="${pokemon.sprites.back_default}" alt="">
@@ -21,6 +22,13 @@ search_btn.addEventListener('click', () => {
             <h3 class="thuoctinh">Weight : ${pokemon.weight}g</h3>
             <h3 class="thuoctinh">Height : 0.${pokemon.height}m</h3>
             </div>`;
-    })
+        })
+
+        .catch(error => {
+            alert(`Không có Pokemon nào tên ${search.value}`, error);       
+            
+        })
+
+
 });
 
