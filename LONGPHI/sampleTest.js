@@ -1,20 +1,21 @@
 // Thời gian làm bài: 1h30p (không kể 5p đọc đề)
 // Các em đọc kỹ đề và làm đúng yêu cầu đề bài. Good luck!
 
-// Ex1. Hoàn thiện hàm tìm số đối xứng dưới đây
+// Ex1. Hoàn thiện hàm tìm số đối xứng chẵn dưới đây
 
 /**
- * Hàm tìm số đối xứng
+ * Hàm tìm số đối xứng chẵn
+ * (số đối xứng chẵn là số đọc từ trái sang phải và từ phải sang trái đều giống nhau trong cùng 1 dãy số gồm số các phần tử là số chẵn)
+ * VD: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+ * Các cặp số đối xứng chẵn là (1, 10), (2, 9), (3, 8), (4, 7), (5, 6)
  * @param {Integer} range Giới hạn phạm vi tìm kiếm (số nguyên dương)
  * @param {Number} inputNumber Số cần tìm (số nguyên dương)
- * @return {Number | null} Trả về số đối xứng trong phạm vi nếu tìm thấy hoặc null nếu không tìm thấy
+ * @return {Number | null} Trả về số đối xứng chẵn trong phạm vi nếu tìm thấy hoặc null nếu không tìm thấy
  * @example
  * findSymmetricNumber(10, 8) => 3
  * findSymmetricNumber(10, 3) => 8
- * findSymmetricNumber(10, 0) => 5
- * findSymmetricNumber(10, 5) => 0
- * findSymmetricNumber(9, 3) => null
- * findSymmetricNumber(10, 11) => null
+ * findSymmetricNumber(9, 3) => null. vì trong phạm vi lẻ (1->9) không có số đối xứng chẵn
+ * findSymmetricNumber(10, 11) => null. vì 11 nằm ngoài phạm vi tìm kiếm
  */
 function findSymmetricNumber(range, inputNumber) {
 	let result = null;
@@ -75,6 +76,6 @@ function mergeStringAlternately(str1, str2) {
 // - Yêu cầu bắt buộc
 // + Viền của các nút (button) và input phải được bo tròn 4px
 // + Màu chữ mặc định được xác định bằng ngày tháng năm sinh của bạn
-// VD: 21/12/2000 -> #211200 
+// VD: 21/12/2000 -> #211200
 // (nếu chữ có màu sắc khó nhìn thì hãy thay đổi màu background của trang web sao cho phù hợp)
 // + Chỉ sử dụng HTML, CSS, JS
