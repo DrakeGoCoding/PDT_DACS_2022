@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="logo"></div>
+        <div class="container">
+            <h2>Thông tin cuốn sách</h2>
+            <form>
+                <div class="form-group">
+                    <label for="masv">Mã số:</label>
+                    <input type="text" class="form-control" id="maso" placeholder="Nhập Mã Số"
+                        name="MaSV">
+                </div>
+                <div class="form-group">
+                    <label for="title">Tiêu đề:</label>
+                    <input type="text" class="form-control" id="title" placeholder="Nhập tiêu đề"
+                        name="title">
+                </div>
+                <div class="form-group">
+                    <label for="author">Tác giả:</label>
+                    <input type="text" class="form-control" id="author" placeholder="Nhập tác giả"
+                        name="author">
+                </div>
+                <div class="form-group">
+                    <label for="publishedYear">Năm xuất bản</label>
+                    <input type="text" class="form-control"
+                        id="publishedYear" placeholder="Nhập năm xuất bản"
+                        name="publishedYear">
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Giá tiền:</label>
+                    <input type="text" class="form-control" id="price" placeholder="Nhập giá tiền:"
+                        name="price">
+                </div>
+
+                <button type="button" class="btn btn-success" onclick="ThemSach()">Thêm sách mới</button>
+                <button type="button" class="btn btn-primary" onclick="LuuThongTin()"> Lưu</button>
+            </form>
+            <div style="float: right;">
+                <button class="btn btn-success" onclick="SetStorage()">Lưu storage</button>
+                <button class="btn btn-primary" onclick="GetStorage()">Lấy storage</button>
+                <button class="btn btn-danger" onclick="XoaSach()">Xóa sách</button>
+            </div>
+        </div>
+        <!--table bootstrap 4 -->
+        <div class="clearfix"></div>
+        <br>
+        <div class="container">
+            <div class="right">
+                <div class="input-group">
+                    <input type="text" id="tukhoa" onkeyup="TimKiemSach()"
+                        onchange="TimKiemSach()"
+                        class="form-control" placeholder="Nhập vào tên sách">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" onclick="TimKiemSach()" type="button">Tìm
+                            kiếm</button>
+                    </span>
+                </div>
+                <br />
+                <div class="alert alert-success" id="ThongBao"></div>
+            </div>
+            <h2>Danh sách các sách có trong thư viện</h2>
+            <p> </p>
+            <table id="TableSach" class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Mã số</th>
+                        <th>Tiêu đề</th>
+                        <th>Tác giả</th>
+                        <th>Năm xuất bản</th>
+                        <th>Giá tiền</th>
+                        <!-- <th>Điểm TB</th> -->
+                        <!-- <th>Xếp loại</th> -->
+                    </tr>
+                </thead>
+                <tbody id="tbodySach">
+                    <tr>
+                        <td></td>
+                        <td>giatri cot 1</td>
+                        <td>giatri cot 2</td>
+                        <td>giatri cot 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script type="text/JavaScript" src="Sach.js"></script>
+        <script type="text/JavaScript" src="DanhSachSach.js"></script>
+        <script type="text/JavaScript" src="Validation.js"></script>
+        <script type="text/JavaScript" src="main.js"></script>
+    </body>
+</html>
