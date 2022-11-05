@@ -3,6 +3,14 @@
 // - author (tác giả, string),
 // - publishedYear (năm xuất bản, number)
 // - price (giá tiền, number).
+const book = {
+    title:String,
+    author:String,
+    publishedYear:Number,
+    price:Number
+};
+
+const bookList = [book];
 
 
 // 2. Viết hàm in ra danh sách các cuốn sách các cuốn sách theo mẫu:
@@ -10,9 +18,10 @@
 // Ví dụ: 
 // 1. "Javascript for Dummies" by Jon Doe, published in 2001 - 100000 VNĐ
 // 2. "Dummies learn Javascript" by Joe Don, published in 2010 - 1000000 VNĐ
-
-
-// 3. Viết hàm cho phép người dùng thêm sách mới (nhập vào 4 thuộc tính ở bài 1) vào trong mảng,
+printf = (book => {
+    
+}
+)// 3. Viết hàm cho phép người dùng thêm sách mới (nhập vào 4 thuộc tính ở bài 1) vào trong mảng,
 // trong đó 3 thuộc tính title, author và publishedYear là bắt buộc, price có thể không nhập.
 // - Với 2 thuộc tính title và author
 //   + Nếu người dùng nhập vào 1 chuỗi rỗng thì chuỗi nhập vào không được rỗng.
