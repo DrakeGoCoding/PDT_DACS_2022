@@ -1,0 +1,54 @@
+*{
+    font-family:'Courier New', Courier, monospace
+}
+.container{
+    text-align: center;
+    width: 35%;
+    margin: auto;
+    background-image: linear-gradient(#ADA996,#F2F2F2,#DBDBDB,#EAEAEA);
+    border-radius: 10px;
+    border: 5px solid ;
+  
+}
+
+#backgr{
+    background-image: url("https://anhdep123.com/wp-content/uploads/2020/05/%E1%BA%A3nh-pokemon-cute.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#name-pokemon{
+    text-transform: uppercase;
+}
+.thuoctinh{
+    text-transform: capitalize;
+}
+.header{
+    padding:25px;
+    
+}
+#search{
+    font-size: 15px;
+    box-shadow: 3px 3px 3px 3px rgb(99, 96, 96);
+    border-radius: 3px;
+   
+    /* left: 10px; */
+}
+#search_btn{
+    font-size: 15px;
+    box-shadow: 3px 3px 3px 3px rgb(99, 96, 96);
+    border-radius: 3px;
+ 
+}
+
+#search_btn:hover{
+    color:red;
+}
+.anh{
+    width:47%;
+}
+#header-name{
+    margin-top:auto;
+    font-size:50px;
+    color:chocolate;
+}
