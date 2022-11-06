@@ -14,15 +14,20 @@
  * @example
  * findSymmetricNumber(10, 8) => 3
  * findSymmetricNumber(10, 3) => 8
+<<<<<<< HEAD
+ * findSymmetricNumber(9, 3) => null
+ * findSymmetricNumber(10, 11) => null
+=======
  * findSymmetricNumber(9, 3) => null. vì trong phạm vi lẻ (1->9) không có số đối xứng chẵn
  * findSymmetricNumber(10, 11) => null. vì 11 nằm ngoài phạm vi tìm kiếm
+>>>>>>> 59a60436c3480cbb5d75f0eebde4a4d4d673deb5
  */
+//1 2 3 4 5 6 7 8 9 10
 function findSymmetricNumber(range, inputNumber) {
-	let result = null;
-
-	// Viết code ở đây
-
-	return result;
+	if(range%2 != 0 || range <2 || inputNumber > range)
+		return null;
+	else 
+		return (range+1)-inputNumber;
 }
 
 // Ex2. Hoàn thiện hàm merge xen kẽ 2 chuỗi
